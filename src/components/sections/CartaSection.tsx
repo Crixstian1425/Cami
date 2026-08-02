@@ -55,7 +55,7 @@ export default function CartaSection() {
                 <p>
                   Me dijiste que escribiera algo memorable, así que aquí está:
                   mi recuerdo de la primera vez que te vi, o como te gusta
-                  llamarlo, nuestro bello "clique".
+                  llamarlo, nuestro bello clique.
                 </p>
 
                 <p>

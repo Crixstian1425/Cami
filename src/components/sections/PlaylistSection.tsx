@@ -5,6 +5,7 @@ import Image from "next/image";
 import { playlistItems } from "@/data/playlist";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import FloralDecoration from "@/components/ui/FloralDecoration";
+import type { PlaylistItem } from "@/types";
 
 function PlayIcon() {
   return (
@@ -39,7 +40,7 @@ export default function PlaylistSection() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [currentSong, setCurrentSong] = useState<string | null>(null);
 
-  const handlePlay = (song: any) => {
+  const handlePlay = (song: PlaylistItem) => {
     if (!audioRef.current) return;
 
     if (currentSong === song.id) {

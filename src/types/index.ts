@@ -13,8 +13,8 @@ export interface PlaylistItem {
   title: string;
   artist: string;
   description: string;
-  /** Reemplaza con la ruta de la portada, ej: "/images/cancion1.jpg" */
   coverSrc: string;
+  audioSrc: string;
 }
 
 export interface NavItem {
